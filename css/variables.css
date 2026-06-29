@@ -1,0 +1,46 @@
+/* ==========================================
+   PixelVista Design System
+========================================== */
+
+:root{
+
+    /* Colors */
+    --clr-primary:#3B82F6;
+    --clr-secondary:#8B5CF6;
+    --clr-accent:#06B6D4;
+
+    --clr-bg:#0B1120;
+    --clr-surface:#111827;
+    --clr-surface-light:#1F2937;
+
+    --clr-text:#F8FAFC;
+    --clr-muted:#94A3B8;
+
+    --clr-border:rgba(255,255,255,.08);
+
+    /* Typography */
+
+    --font-heading:'Poppins',sans-serif;
+    --font-body:'Inter',sans-serif;
+
+    /* Container */
+
+    --container-width:1200px;
+
+    /* Radius */
+
+    --radius-sm:8px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --radius-xl:40px;
+
+    /* Shadow */
+
+    --shadow-lg:
+    0 20px 50px rgba(0,0,0,.35);
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+}
