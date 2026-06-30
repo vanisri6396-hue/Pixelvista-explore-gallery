@@ -1,46 +1,186 @@
-/* ==========================================
-   PixelVista Design System
-========================================== */
+/*======================================
+    PIXELVISTA DESIGN SYSTEM v1.0
+    Design Tokens
+======================================*/
 
 :root{
 
-    /* Colors */
-    --clr-primary:#3B82F6;
-    --clr-secondary:#8B5CF6;
-    --clr-accent:#06B6D4;
+    /*==================================
+        COLORS
+    ==================================*/
 
-    --clr-bg:#0B1120;
-    --clr-surface:#111827;
-    --clr-surface-light:#1F2937;
+    --color-bg: #070B14;
+    --color-surface: rgba(18, 24, 38, 0.72);
+    --color-surface-2: rgba(28, 35, 54, 0.72);
 
-    --clr-text:#F8FAFC;
-    --clr-muted:#94A3B8;
+    --color-primary: #4F8CFF;
+    --color-accent: #8B5CF6;
+    --color-highlight: #22D3EE;
 
-    --clr-border:rgba(255,255,255,.08);
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
 
-    /* Typography */
+    --color-text: #F8FAFC;
+    --color-text-secondary: #CBD5E1;
+    --color-muted: #94A3B8;
 
-    --font-heading:'Poppins',sans-serif;
-    --font-body:'Inter',sans-serif;
+    --color-border: rgba(255,255,255,.08);
+    --color-border-hover: rgba(79,140,255,.45);
 
-    /* Container */
+    /*==================================
+        GRADIENTS
+    ==================================*/
 
-    --container-width:1200px;
+    --gradient-primary:
+        linear-gradient(
+            135deg,
+            #4F8CFF 0%,
+            #8B5CF6 55%,
+            #22D3EE 100%
+        );
 
-    /* Radius */
+    --gradient-hero:
+        linear-gradient(
+            90deg,
+            #4F8CFF,
+            #8B5CF6,
+            #22D3EE
+        );
+
+    --gradient-card:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.01)
+        );
+
+    /*==================================
+        TYPOGRAPHY
+    ==================================*/
+
+    --font-heading:
+        "Poppins",
+        sans-serif;
+
+    --font-body:
+        "Inter",
+        sans-serif;
+
+    --display:
+        clamp(3rem,6vw,5rem);
+
+    --h1:
+        clamp(2.6rem,5vw,4.2rem);
+
+    --h2:
+        clamp(2rem,4vw,3rem);
+
+    --h3:
+        1.5rem;
+
+    --body-lg:
+        1.125rem;
+
+    --body:
+        1rem;
+
+    --body-sm:
+        .9rem;
+
+    /*==================================
+        FONT WEIGHTS
+    ==================================*/
+
+    --fw-regular:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+    --fw-black:800;
+
+    /*==================================
+        SPACING SYSTEM
+        8px Grid
+    ==================================*/
+
+    --space-1:.25rem;
+    --space-2:.5rem;
+    --space-3:.75rem;
+    --space-4:1rem;
+    --space-5:1.5rem;
+    --space-6:2rem;
+    --space-7:3rem;
+    --space-8:4rem;
+    --space-9:6rem;
+    --space-10:8rem;
+
+    /*==================================
+        BORDER RADIUS
+    ==================================*/
 
     --radius-sm:8px;
     --radius-md:16px;
     --radius-lg:24px;
-    --radius-xl:40px;
+    --radius-xl:32px;
+    --radius-pill:999px;
 
-    /* Shadow */
+    /*==================================
+        SHADOWS
+    ==================================*/
+
+    --shadow-sm:
+        0 5px 15px rgba(0,0,0,.18);
+
+    --shadow-md:
+        0 12px 35px rgba(0,0,0,.28);
 
     --shadow-lg:
-    0 20px 50px rgba(0,0,0,.35);
+        0 20px 60px rgba(0,0,0,.40);
 
-    /* Transition */
+    --shadow-glow:
+        0 0 40px rgba(79,140,255,.30);
 
-    --transition:.35s ease;
+    /*==================================
+        GLASS EFFECT
+    ==================================*/
+
+    --glass-bg:
+        rgba(255,255,255,.05);
+
+    --glass-bg-hover:
+        rgba(255,255,255,.08);
+
+    --glass-blur:
+        blur(18px);
+
+    /*==================================
+        CONTAINER
+    ==================================*/
+
+    --container-width:1280px;
+
+    --container-padding:1.5rem;
+
+    /*==================================
+        TRANSITIONS
+    ==================================*/
+
+    --transition-fast:
+        .2s ease;
+
+    --transition:
+        .35s ease;
+
+    --transition-slow:
+        .6s ease;
+
+    /*==================================
+        Z INDEX
+    ==================================*/
+
+    --z-background:-1;
+    --z-default:1;
+    --z-navbar:100;
+    --z-modal:1000;
 
 }

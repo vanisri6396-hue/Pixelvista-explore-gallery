@@ -1,0 +1,229 @@
+/*======================================
+    PIXELVISTA v1.0
+    TYPOGRAPHY SYSTEM
+======================================*/
+
+/*--------------------------------------
+    Body
+--------------------------------------*/
+
+body{
+    font-family:var(--font-body);
+    font-size:var(--body);
+    font-weight:var(--fw-regular);
+    line-height:1.7;
+    color:var(--color-text);
+}
+
+/*--------------------------------------
+    Headings
+--------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:var(--font-heading);
+    font-weight:var(--fw-bold);
+    line-height:1.15;
+    letter-spacing:-0.03em;
+    color:var(--color-text);
+}
+
+/*--------------------------------------
+    Individual Heading Sizes
+--------------------------------------*/
+
+h1{
+    font-size:var(--display);
+}
+
+h2{
+    font-size:var(--h1);
+}
+
+h3{
+    font-size:var(--h2);
+}
+
+h4{
+    font-size:1.75rem;
+}
+
+h5{
+    font-size:1.25rem;
+}
+
+h6{
+    font-size:1rem;
+}
+
+/*--------------------------------------
+    Paragraphs
+--------------------------------------*/
+
+p{
+    color:var(--color-text-secondary);
+    font-size:var(--body);
+    line-height:1.8;
+}
+
+/*--------------------------------------
+    Small Text
+--------------------------------------*/
+
+small{
+    font-size:var(--body-sm);
+    color:var(--color-muted);
+}
+
+/*--------------------------------------
+    Strong Text
+--------------------------------------*/
+
+strong{
+    font-weight:var(--fw-semibold);
+    color:var(--color-text);
+}
+
+/*--------------------------------------
+    Gradient Text Utility
+--------------------------------------*/
+
+.text-gradient{
+
+    background:var(--gradient-hero);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+/*--------------------------------------
+    Hero Title
+--------------------------------------*/
+
+.hero-title{
+
+    max-width:900px;
+
+    margin-inline:auto;
+
+    font-size:var(--display);
+
+    font-weight:var(--fw-black);
+
+    line-height:1.05;
+
+    letter-spacing:-0.05em;
+
+}
+
+/*--------------------------------------
+    Hero Description
+--------------------------------------*/
+
+.hero-description{
+
+    max-width:700px;
+
+    margin-inline:auto;
+
+    font-size:var(--body-lg);
+
+    color:var(--color-text-secondary);
+
+}
+
+/*--------------------------------------
+    Section Title
+--------------------------------------*/
+
+.section-title{
+
+    font-size:var(--h1);
+
+    text-align:center;
+
+    margin-bottom:var(--space-5);
+
+}
+
+/*--------------------------------------
+    Section Subtitle
+--------------------------------------*/
+
+.section-subtitle{
+
+    max-width:700px;
+
+    margin-inline:auto;
+
+    text-align:center;
+
+    color:var(--color-muted);
+
+    margin-bottom:var(--space-8);
+
+}
+
+/*--------------------------------------
+    Text Alignment Utilities
+--------------------------------------*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+/*--------------------------------------
+    Font Weight Utilities
+--------------------------------------*/
+
+.fw-regular{
+
+    font-weight:var(--fw-regular);
+
+}
+
+.fw-medium{
+
+    font-weight:var(--fw-medium);
+
+}
+
+.fw-semibold{
+
+    font-weight:var(--fw-semibold);
+
+}
+
+.fw-bold{
+
+    font-weight:var(--fw-bold);
+
+}
+
+.fw-black{
+
+    font-weight:var(--fw-black);
+
+}

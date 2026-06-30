@@ -8,56 +8,210 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="css/variables.css">
-
-<link rel="stylesheet" href="css/base.css">
-
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/typography.css">
 <link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
 
-<link rel="stylesheet" href="css/components.css">
-
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/animations.css">
-
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/components/button.css">
+<link rel="stylesheet" href="css/components/input.css">
+<link rel="stylesheet" href="css/components/search.css">
+<link rel="stylesheet" href="css/components/badge.css">
+<link rel="stylesheet" href="css/components/chip.css">
+<link rel="stylesheet" href="css/components/image-card.css">
+<link rel="stylesheet" href="css/components/stats-card.css">
+<link rel="stylesheet" href="css/components/loader.css">
+<link rel="stylesheet" href="css/components/skeleton.css">
+<link rel="stylesheet" href="css/components/toast.css">
+<link rel="stylesheet" href="css/components/modal.css">
+<link rel="stylesheet" href="css/components/empty-state.css">
 </head>
+
 <body>
+    
     <body>
 
     <div class="background-blobs">
-        <span class="blob blob-1"></span>
-        <span class="blob blob-2"></span>
-        <span class="blob blob-3"></span>
-    </div>
+
+    <span class="blob blob-1"></span>
+
+    <span class="blob blob-2"></span>
+
+    <span class="blob blob-3"></span>
+
+</div>
 
     <header class="header">
 
-        <nav class="container navbar">
+    <nav class="container navbar">
 
-        </nav>
+        <!-- Logo -->
 
+        <a href="#" class="logo">
+
+            <div class="logo-icon">
+                📸
+            </div>
+
+            <div class="logo-text">
+
+                <span class="logo-title">
+                    PixelVista
+                </span>
+
+                <span class="logo-subtitle">
+                    Explore • Discover • Inspire
+                </span>
+
+            </div>
+
+        </a>
+
+        <!-- Navigation -->
+
+        <div class="nav-links">
+
+            <a href="#">Home</a>
+
+            <a href="#">Trending</a>
+
+            <a href="#">Gallery</a>
+
+            <a href="#">About</a>
+
+        </div>
+
+        <!-- Actions -->
+
+        <div class="nav-actions">
+
+            <button class="theme-toggle" aria-label="Toggle theme">
+
+                🌙
+
+            </button>
+
+            <button class="nav-search">
+
+                Search
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
     </header>
 
     <main>
 
-        <section class="hero">
+    <!-- ================= HERO ================= -->
 
-        </section>
+    <section class="hero">
 
-        <section class="trending">
+    <div class="background-blobs">
 
-        </section>
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
 
-        <section class="categories">
+    </div>
 
-        </section>
+    <div class="container hero-content">
 
-        <section class="gallery">
+        <div class="hero-badge">
 
-        </section>
+            🚀 Performance-first Image Discovery
 
-    </main>
+        </div>
+
+        <h1 class="hero-title">
+
+            Discover Photography
+
+            <span>That Inspires</span>
+
+        </h1>
+
+        <p class="hero-description">
+
+            Explore millions of beautiful high-resolution photos with lightning-fast search, modern UI, and intelligent lazy loading.
+
+        </p>
+
+        <div class="search-wrapper">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search mountains, wildlife, architecture..."
+            >
+
+            <button>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+        <div class="hero-categories">
+
+            <button>🌿 Nature</button>
+            <button>🚗 Cars</button>
+            <button>🚀 Space</button>
+            <button>🤖 AI</button>
+            <button>🏖 Travel</button>
+            <button>🦁 Animals</button>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+
+                <h3>10M+</h3>
+
+                <span>Photos</span>
+
+            </div>
+
+            <div>
+
+                <h3>100+</h3>
+
+                <span>Categories</span>
+
+            </div>
+
+            <div>
+
+                <h3>⚡</h3>
+
+                <span>Optimized</span>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+
+            ↓ Scroll to Explore
+
+        </div>
+
+    </div>
+
+</section>
+</main>
 
     <footer>
 
@@ -66,5 +220,39 @@
 <script type="module" src="js/app.js"></script>
 
 </body>
+  <script type="module" src="./js/app.js"></script>
+<!-- ======================================
+     Gallery Section
+====================================== -->
+
+<section class="gallery section">
+
+    <div class="container">
+
+        <div class="gallery__header">
+
+            <h2 class="section-title">
+                Discover Beautiful Photos
+            </h2>
+
+            <p class="section-subtitle">
+                Curated images powered by the Pexels API.
+            </p>
+
+        </div>
+
+        <!-- Images will be inserted here -->
+
+        <div
+            id="gallery"
+            class="gallery__grid"
+        >
+
+        </div>
+
+    </div>
+
+</section>
+
 </body>
 </html>

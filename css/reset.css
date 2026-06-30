@@ -1,0 +1,163 @@
+<!-- Purpose: Normalize browser defaults, improve accessibility, and create a consistent starting point across Chrome, Firefox, Safari, and Edge. -->
+/*======================================
+    PIXELVISTA v1.0
+    RESET & GLOBAL FOUNDATION
+======================================*/
+
+/*--------------------------------------
+    Box Sizing
+--------------------------------------*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*--------------------------------------
+    HTML
+--------------------------------------*/
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+}
+
+/*--------------------------------------
+    Body
+--------------------------------------*/
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/*--------------------------------------
+    Media
+--------------------------------------*/
+
+img,
+picture,
+svg,
+video,
+canvas{
+    display:block;
+    max-width:100%;
+}
+
+/*--------------------------------------
+    Form Elements
+--------------------------------------*/
+
+input,
+button,
+textarea,
+select{
+    font:inherit;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+/*--------------------------------------
+    Buttons
+--------------------------------------*/
+
+button{
+    cursor:pointer;
+    user-select:none;
+}
+
+/*--------------------------------------
+    Links
+--------------------------------------*/
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/*--------------------------------------
+    Lists
+--------------------------------------*/
+
+ul,
+ol{
+    list-style:none;
+}
+
+/*--------------------------------------
+    Tables
+--------------------------------------*/
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*--------------------------------------
+    Text Selection
+--------------------------------------*/
+
+::selection{
+    background:var(--color-primary);
+    color:#ffffff;
+}
+
+/*--------------------------------------
+    Scrollbar (Chrome/Edge)
+--------------------------------------*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0B1020;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(
+        var(--color-primary),
+        var(--color-accent)
+    );
+    border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--color-highlight);
+}
+
+/*--------------------------------------
+    Focus Visible
+--------------------------------------*/
+
+:focus-visible{
+    outline:2px solid var(--color-primary);
+    outline-offset:3px;
+    border-radius:6px;
+}
+
+/*--------------------------------------
+    Reduce Motion
+--------------------------------------*/
+
+@media (prefers-reduced-motion: reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
+    }
+
+}

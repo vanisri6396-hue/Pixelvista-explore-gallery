@@ -1,0 +1,344 @@
+/*======================================
+    PIXELVISTA v1.0
+    LAYOUT SYSTEM
+======================================*/
+
+/*======================================
+    PAGE WRAPPER
+======================================*/
+
+body{
+    background: var(--color-bg);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*======================================
+    MAIN
+======================================*/
+
+main{
+    position: relative;
+    z-index: var(--z-default);
+}
+
+/*======================================
+    CONTAINER
+======================================*/
+
+.container{
+
+    width: min(
+        calc(100% - (var(--container-padding) * 2)),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+
+}
+
+/*======================================
+    SECTION SPACING
+======================================*/
+
+section{
+
+    position: relative;
+
+    padding-block: var(--space-10);
+
+}
+
+/*======================================
+    HERO SECTION
+======================================*/
+
+.hero{
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+    padding-top: 8rem;
+
+    padding-bottom: 5rem;
+
+}
+
+.hero-content{
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: var(--space-5);
+
+    max-width: 900px;
+
+    margin-inline: auto;
+
+    z-index: 10;
+
+}
+
+/*======================================
+    BACKGROUND BLOBS
+======================================*/
+
+.background-blobs{
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: var(--z-background);
+
+}
+
+/*======================================
+    BLOB BASE
+======================================*/
+
+.blob{
+
+    position: absolute;
+
+    width: 520px;
+
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    filter: blur(160px);
+
+    opacity: .30;
+
+}
+
+/*======================================
+    BLOB POSITIONS
+======================================*/
+
+.blob-1{
+
+    top: -180px;
+
+    left: -120px;
+
+}
+
+.blob-2{
+
+    top: 8%;
+
+    right: -160px;
+
+}
+
+.blob-3{
+
+    bottom: -220px;
+
+    left: 35%;
+
+}
+
+/*======================================
+    TRENDING
+======================================*/
+
+.trending{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: var(--space-6);
+
+}
+
+/*======================================
+    CATEGORY SECTION
+======================================*/
+
+.categories{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-6);
+
+}
+
+/*======================================
+    GALLERY
+======================================*/
+
+.gallery{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-7);
+
+}
+
+/*======================================
+    GALLERY GRID
+======================================*/
+
+.gallery-grid{
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 2rem;
+
+}
+
+/*======================================
+    FEATURE GRID
+======================================*/
+
+.feature-grid{
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 2rem;
+
+}
+
+/*======================================
+    FOOTER
+======================================*/
+
+.footer{
+
+    padding-block: 4rem;
+
+}
+
+/*======================================
+    FLEX UTILITIES
+======================================*/
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/*======================================
+    GRID UTILITIES
+======================================*/
+
+.grid{
+
+    display:grid;
+
+}
+
+.grid-center{
+
+    place-items:center;
+
+}
+
+/*======================================
+    WIDTH UTILITIES
+======================================*/
+
+.w-full{
+
+    width:100%;
+
+}
+
+.h-full{
+
+    height:100%;
+
+}
+
+/*======================================
+    OVERFLOW
+======================================*/
+
+.overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+/*======================================
+    POSITION
+======================================*/
+
+.relative{
+
+    position:relative;
+
+}
+
+.absolute{
+
+    position:absolute;
+
+}

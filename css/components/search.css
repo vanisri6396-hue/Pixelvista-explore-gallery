@@ -1,0 +1,338 @@
+/*======================================
+    PIXELVISTA DESIGN SYSTEM
+    SEARCH COMPONENT v1.0
+======================================*/
+
+
+/*======================================
+    Search Container
+======================================*/
+
+.search{
+
+    position:relative;
+
+    width:min(900px,100%);
+
+    margin-inline:auto;
+
+}
+
+
+/*======================================
+    Search Form
+======================================*/
+
+.search__form{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    min-height:72px;
+
+    padding:0 .75rem 0 1.5rem;
+
+    background:var(--glass-bg);
+
+    backdrop-filter:var(--glass-blur);
+
+    border:1px solid var(--color-border);
+
+    border-radius:999px;
+
+    box-shadow:var(--shadow-lg);
+
+    transition:all .35s ease;
+
+}
+
+.search__form:hover{
+
+    border-color:var(--color-border-hover);
+
+}
+
+.search__form:focus-within{
+
+    border-color:var(--color-primary);
+
+    box-shadow:
+
+        0 0 0 5px rgba(79,140,255,.15),
+
+        var(--shadow-lg);
+
+}
+
+
+/*======================================
+    Search Icon
+======================================*/
+
+.search__icon{
+
+    font-size:1.15rem;
+
+    color:var(--color-muted);
+
+}
+
+
+/*======================================
+    Input
+======================================*/
+
+.search__input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:var(--color-text);
+
+    font-size:1rem;
+
+    font-family:var(--font-body);
+
+}
+
+.search__input::placeholder{
+
+    color:var(--color-muted);
+
+}
+
+
+/*======================================
+    Keyboard Shortcut
+======================================*/
+
+.search__shortcut{
+
+    padding:.45rem .8rem;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:var(--color-muted);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+
+/*======================================
+    Clear Button
+======================================*/
+
+.search__clear{
+
+    width:42px;
+
+    height:42px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:50%;
+
+    color:var(--color-muted);
+
+    transition:var(--transition);
+
+}
+
+.search__clear:hover{
+
+    background:rgba(255,255,255,.08);
+
+    color:var(--color-danger);
+
+}
+
+
+/*======================================
+    Voice Search
+======================================*/
+
+.search__voice{
+
+    width:48px;
+
+    height:48px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:50%;
+
+    color:var(--color-text);
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:var(--transition);
+
+}
+
+.search__voice:hover{
+
+    background:var(--color-primary);
+
+    color:white;
+
+}
+
+
+/*======================================
+    Search Button
+======================================*/
+
+.search__button{
+
+    min-width:150px;
+
+    height:56px;
+
+    border-radius:999px;
+
+    background:var(--gradient-primary);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.search__button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 12px 30px rgba(79,140,255,.35);
+
+}
+
+
+/*======================================
+    Suggestions Dropdown
+======================================*/
+
+.search__dropdown{
+
+    position:absolute;
+
+    top:calc(100% + 1rem);
+
+    width:100%;
+
+    background:rgba(14,20,34,.92);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid var(--color-border);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-10px);
+
+    transition:all .35s ease;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.search--active .search__dropdown{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+
+/*======================================
+    Suggestion Item
+======================================*/
+
+.search__item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    padding:1rem 1.5rem;
+
+    cursor:pointer;
+
+    transition:var(--transition-fast);
+
+}
+
+.search__item:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.search__item i{
+
+    color:var(--color-primary);
+
+}
+
+
+/*======================================
+    Loading State
+======================================*/
+
+.search--loading .search__button{
+
+    pointer-events:none;
+
+    opacity:.8;
+
+}
+
+
+/*======================================
+    Empty State
+======================================*/
+
+.search__empty{
+
+    padding:2rem;
+
+    text-align:center;
+
+    color:var(--color-muted);
+
+}

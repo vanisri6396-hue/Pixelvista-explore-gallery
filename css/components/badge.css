@@ -1,0 +1,124 @@
+/*======================================
+    PIXELVISTA DESIGN SYSTEM
+    BADGE COMPONENT v1.0
+======================================*/
+
+/*======================================
+    Base Badge
+======================================*/
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.5rem;
+
+    padding:.5rem 1rem;
+
+    border-radius:999px;
+
+    font-size:.82rem;
+
+    font-weight:var(--fw-semibold);
+
+    white-space:nowrap;
+
+    border:1px solid transparent;
+
+    transition:all .3s ease;
+
+}
+
+/*======================================
+    Primary
+======================================*/
+
+.badge--primary{
+
+    color:white;
+
+    background:var(--gradient-primary);
+
+}
+
+/*======================================
+    Glass
+======================================*/
+
+.badge--glass{
+
+    background:var(--glass-bg);
+
+    backdrop-filter:var(--glass-blur);
+
+    border-color:var(--color-border);
+
+    color:var(--color-text);
+
+}
+
+/*======================================
+    Outline
+======================================*/
+
+.badge--outline{
+
+    background:transparent;
+
+    border-color:var(--color-primary);
+
+    color:var(--color-primary);
+
+}
+
+/*======================================
+    Success
+======================================*/
+
+.badge--success{
+
+    background:rgba(34,197,94,.12);
+
+    color:var(--color-success);
+
+    border-color:rgba(34,197,94,.25);
+
+}
+
+/*======================================
+    Warning
+======================================*/
+
+.badge--warning{
+
+    background:rgba(245,158,11,.12);
+
+    color:var(--color-warning);
+
+    border-color:rgba(245,158,11,.25);
+
+}
+
+/*======================================
+    Danger
+======================================*/
+
+.badge--danger{
+
+    background:rgba(239,68,68,.12);
+
+    color:var(--color-danger);
+
+    border-color:rgba(239,68,68,.25);
+
+}
+
+.badge:hover{
+
+    transform:translateY(-2px);
+
+}

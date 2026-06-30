@@ -1,0 +1,249 @@
+/*======================================
+    PIXELVISTA DESIGN SYSTEM
+    INPUT COMPONENT v1.0
+======================================*/
+
+
+/*======================================
+    Wrapper
+======================================*/
+
+.input{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.65rem;
+
+    width:100%;
+
+}
+
+
+/*======================================
+    Label
+======================================*/
+
+.input__label{
+
+    font-size:.92rem;
+
+    font-weight:var(--fw-medium);
+
+    color:var(--color-text);
+
+}
+
+
+/*======================================
+    Input Container
+======================================*/
+
+.input__wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.85rem;
+
+    width:100%;
+
+    min-height:60px;
+
+    padding:0 1.2rem;
+
+    border-radius:var(--radius-lg);
+
+    background:var(--glass-bg);
+
+    backdrop-filter:var(--glass-blur);
+
+    border:1px solid var(--color-border);
+
+    transition:all .35s ease;
+
+}
+
+
+/*======================================
+    Hover
+======================================*/
+
+.input__wrapper:hover{
+
+    border-color:rgba(255,255,255,.15);
+
+}
+
+
+/*======================================
+    Focus
+======================================*/
+
+.input__wrapper:focus-within{
+
+    border-color:var(--color-primary);
+
+    box-shadow:
+
+        0 0 0 4px rgba(79,140,255,.12);
+
+}
+
+
+/*======================================
+    Icon
+======================================*/
+
+.input__icon{
+
+    font-size:1.1rem;
+
+    color:var(--color-muted);
+
+    flex-shrink:0;
+
+}
+
+
+/*======================================
+    Input Field
+======================================*/
+
+.input__field{
+
+    flex:1;
+
+    width:100%;
+
+    background:transparent;
+
+    color:var(--color-text);
+
+    border:none;
+
+    outline:none;
+
+    font-size:1rem;
+
+}
+
+
+.input__field::placeholder{
+
+    color:var(--color-muted);
+
+}
+
+
+/*======================================
+    Helper Text
+======================================*/
+
+.input__helper{
+
+    font-size:.85rem;
+
+    color:var(--color-muted);
+
+}
+
+
+/*======================================
+    Success
+======================================*/
+
+.input--success .input__wrapper{
+
+    border-color:var(--color-success);
+
+}
+
+
+.input--success .input__helper{
+
+    color:var(--color-success);
+
+}
+
+
+/*======================================
+    Error
+======================================*/
+
+.input--error .input__wrapper{
+
+    border-color:var(--color-danger);
+
+}
+
+
+.input--error .input__helper{
+
+    color:var(--color-danger);
+
+}
+
+
+/*======================================
+    Disabled
+======================================*/
+
+.input--disabled{
+
+    opacity:.6;
+
+    pointer-events:none;
+
+}
+
+
+/*======================================
+    Read Only
+======================================*/
+
+.input--readonly .input__wrapper{
+
+    background:rgba(255,255,255,.03);
+
+}
+
+
+/*======================================
+    Sizes
+======================================*/
+
+.input--sm .input__wrapper{
+
+    min-height:48px;
+
+}
+
+.input--lg .input__wrapper{
+
+    min-height:68px;
+
+}
+
+
+/*======================================
+    Password Toggle
+======================================*/
+
+.input__toggle{
+
+    cursor:pointer;
+
+    color:var(--color-muted);
+
+    transition:.3s;
+
+}
+
+.input__toggle:hover{
+
+    color:var(--color-primary);
+
+}

@@ -1,0 +1,172 @@
+/*======================================
+    PIXELVISTA DESIGN SYSTEM
+    STATS CARD v1.0
+======================================*/
+
+/*======================================
+    Base Card
+======================================*/
+
+.stats-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    min-height:220px;
+
+    padding:2rem;
+
+    border-radius:var(--radius-lg);
+
+    background:var(--glass-bg);
+
+    backdrop-filter:var(--glass-blur);
+
+    border:1px solid var(--color-border);
+
+    transition:all .4s ease;
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--color-primary);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/*======================================
+    Gradient Border
+======================================*/
+
+.stats-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    padding:1px;
+
+    border-radius:inherit;
+
+    background:var(--gradient-primary);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+            mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.stats-card:hover::before{
+
+    opacity:1;
+
+}
+
+/*======================================
+    Icon
+======================================*/
+
+.stats-card__icon{
+
+    width:64px;
+
+    height:64px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:18px;
+
+    background:var(--gradient-primary);
+
+    color:white;
+
+    font-size:1.5rem;
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+/*======================================
+    Value
+======================================*/
+
+.stats-card__value{
+
+    font-size:3rem;
+
+    font-weight:var(--fw-black);
+
+    color:var(--color-text);
+
+    line-height:1;
+
+}
+
+/*======================================
+    Label
+======================================*/
+
+.stats-card__label{
+
+    color:var(--color-muted);
+
+    font-size:1rem;
+
+}
+
+/*======================================
+    Footer
+======================================*/
+
+.stats-card__footer{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-top:auto;
+
+}
+
+.stats-card__trend{
+
+    color:var(--color-success);
+
+    font-weight:600;
+
+}
+
+.stats-card__caption{
+
+    color:var(--color-muted);
+
+    font-size:.9rem;
+
+}
