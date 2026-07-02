@@ -116,3 +116,28 @@
     border-radius:999px;
 
 }
+/*======================================
+    Skeleton Fade Out
+======================================*/
+
+.skeleton{
+
+    opacity:1;
+
+    transition:
+
+        opacity .4s ease,
+
+        visibility .4s ease;
+
+}
+
+.skeleton--hidden{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}

@@ -1,0 +1,74 @@
+.favorite-btn{
+
+    position:absolute;
+
+    top:12px;
+
+    right:12px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(10px);
+
+    color:#fff;
+
+    font-size:1.25rem;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    z-index:10;
+
+}
+
+.favorite-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+.favorite-btn.active{
+
+    background:#ef4444;
+
+}
+/*======================================
+    Favorite Animation
+======================================*/
+
+@keyframes favorite-pop{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.35);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.favorite-btn.animate{
+
+    animation:favorite-pop .35s ease;
+
+}

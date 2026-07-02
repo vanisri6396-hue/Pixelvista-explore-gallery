@@ -1,35 +1,50 @@
-/*======================================
-    Gallery Grid
-======================================*/
+/* ======================================
+   GALLERY SECTION
+====================================== */
 
-.gallery{
+.gallery {
+    width: min(1400px, 92%);
+    margin: 4rem auto;
+}
 
-    padding:6rem 0;
+/* Masonry Layout */
+
+.gallery__grid {
+
+    column-count: 4;
+
+    column-gap: 1.5rem;
 
 }
 
-.gallery__header{
+/* Responsive */
 
-    text-align:center;
+@media (max-width:1200px){
 
-    margin-bottom:4rem;
+    .gallery__grid{
+
+        column-count:3;
+
+    }
 
 }
 
-.gallery__grid{
+@media (max-width:768px){
 
-    display:grid;
+    .gallery__grid{
 
-    grid-template-columns:
+        column-count:2;
 
-        repeat(
+    }
 
-            auto-fit,
+}
 
-            minmax(320px,1fr)
+@media (max-width:480px){
 
-        );
+    .gallery__grid{
 
-    gap:2rem;
+        column-count:1;
+
+    }
 
 }

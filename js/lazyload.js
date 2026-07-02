@@ -19,25 +19,42 @@ const observerOptions = {
 
 function loadImage(image) {
 
-    const source = image.dataset.src;
+    const medium = image.dataset.medium;
+    const large = image.dataset.large;
 
-    if (!source) return;
+    if (!medium || !large) return;
 
-    image.src = source;
+    // Stage 1: Load medium image
+    const mediumImage = new Image();
 
-    image.onload = () => {
+    mediumImage.src = medium;
 
-        // Fade in the image
+    mediumImage.onload = () => {
+
+        image.src = medium;
+
         image.classList.add("loaded");
 
-        // Remove skeleton loader
         const skeleton = image.previousElementSibling;
 
-        if (skeleton && skeleton.classList.contains("skeleton")) {
+        if (skeleton) {
 
-            skeleton.remove();
+            skeleton.classList.add("skeleton--hidden");
+
+            setTimeout(() => skeleton.remove(), 400);
 
         }
+
+        // Stage 2: Load large image
+        const largeImage = new Image();
+
+        largeImage.src = large;
+
+        largeImage.onload = () => {
+
+            image.src = large;
+
+        };
 
     };
 

@@ -62,3 +62,24 @@
     pointer-events:none;
 
 }
+.chip{
+
+    transition:
+
+        all .3s ease;
+
+}
+
+.chip.active{
+
+    background:var(--color-primary);
+
+    color:white;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 10px 25px rgba(37,99,235,.30);
+
+}

@@ -1,258 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PixelVista</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/typography.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/hero.css">
-
-<link rel="stylesheet" href="css/gallery.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/components/button.css">
-<link rel="stylesheet" href="css/components/input.css">
-<link rel="stylesheet" href="css/components/search.css">
-<link rel="stylesheet" href="css/components/badge.css">
-<link rel="stylesheet" href="css/components/chip.css">
-<link rel="stylesheet" href="css/components/image-card.css">
-<link rel="stylesheet" href="css/components/stats-card.css">
-<link rel="stylesheet" href="css/components/loader.css">
-<link rel="stylesheet" href="css/components/skeleton.css">
-<link rel="stylesheet" href="css/components/toast.css">
-<link rel="stylesheet" href="css/components/modal.css">
-<link rel="stylesheet" href="css/components/empty-state.css">
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/favorite.css">
+    <link rel="stylesheet" href="css/components/button.css">
+    <link rel="stylesheet" href="css/components/input.css">
+    <link rel="stylesheet" href="css/components/search.css">
+    <link rel="stylesheet" href="css/components/badge.css">
+    <link rel="stylesheet" href="css/components/chip.css">
+    <link rel="stylesheet" href="css/components/image-card.css">
+    <link rel="stylesheet" href="css/components/stats-card.css">
+    <link rel="stylesheet" href="css/components/loader.css">
+    <link rel="stylesheet" href="css/components/skeleton.css">
+    <link rel="stylesheet" href="css/components/toast.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    <link rel="stylesheet" href="css/components/empty-state.css">
+    <link rel="stylesheet" href="css/components/favorites-counter.css">
 </head>
 
 <body>
-    
-    <body>
 
+    <!-- Background -->
     <div class="background-blobs">
-
-    <span class="blob blob-1"></span>
-
-    <span class="blob blob-2"></span>
-
-    <span class="blob blob-3"></span>
-
-</div>
-
-    <header class="header">
-
-    <nav class="container navbar">
-
-        <!-- Logo -->
-
-        <a href="#" class="logo">
-
-            <div class="logo-icon">
-                📸
-            </div>
-
-            <div class="logo-text">
-
-                <span class="logo-title">
-                    PixelVista
-                </span>
-
-                <span class="logo-subtitle">
-                    Explore • Discover • Inspire
-                </span>
-
-            </div>
-
-        </a>
-
-        <!-- Navigation -->
-
-        <div class="nav-links">
-
-            <a href="#">Home</a>
-
-            <a href="#">Trending</a>
-
-            <a href="#">Gallery</a>
-
-            <a href="#">About</a>
-
-        </div>
-
-        <!-- Actions -->
-
-        <div class="nav-actions">
-
-            <button class="theme-toggle" aria-label="Toggle theme">
-
-                🌙
-
-            </button>
-
-            <button class="nav-search">
-
-                Search
-
-            </button>
-
-        </div>
-
-    </nav>
-
-</header>
-    </header>
-
-    <main>
-
-    <!-- ================= HERO ================= -->
-
-    <section class="hero">
-
-    <div class="background-blobs">
-
         <span class="blob blob-1"></span>
         <span class="blob blob-2"></span>
         <span class="blob blob-3"></span>
-
     </div>
 
-    <div class="container hero-content">
+    <!-- ================= HEADER ================= -->
 
-        <div class="hero-badge">
+    <header class="header">
 
-            🚀 Performance-first Image Discovery
+        <nav class="container navbar">
 
-        </div>
+            <!-- Logo -->
 
-        <h1 class="hero-title">
+            <a href="#" class="logo">
 
-            Discover Photography
+                <div class="logo-icon">📸</div>
 
-            <span>That Inspires</span>
+                <div class="logo-text">
+                    <span class="logo-title">PixelVista</span>
+                    <span class="logo-subtitle">
+                        Explore • Discover • Inspire
+                    </span>
+                </div>
 
-        </h1>
+            </a>
 
-        <p class="hero-description">
+            <!-- Navigation -->
 
-            Explore millions of beautiful high-resolution photos with lightning-fast search, modern UI, and intelligent lazy loading.
+           <div class="nav-links">
+
+    <a href="#" id="nav-home" class="nav-link active">
+
+        Home
+
+    </a>
+
+    <a href="#" id="nav-trending" class="nav-link">
+
+        Trending
+
+    </a>
+
+    <a href="#" id="nav-gallery" class="nav-link">
+
+        Gallery
+
+    </a>
+
+    <a href="#" id="nav-about" class="nav-link">
+
+        About
+
+    </a>
+
+</div>
+            <!-- Actions -->
+
+            <div class="nav-actions">
+
+    <button
+        class="theme-toggle"
+        aria-label="Toggle Theme">
+
+        🌙
+
+    </button>
+
+    <button id="show-favorites">
+
+    ❤️ Favorites
+
+</button>
+
+    <button class="nav-search">
+
+        Search
+
+    </button>
+
+</div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="hero" id="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-badge">
+                    🚀 Performance-first Image Discovery
+                </div>
+
+                <h1 class="hero-title">
+                    Discover Photography
+                    <span>That Inspires</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore millions of beautiful high-resolution photos with
+                    lightning-fast search, modern UI, and intelligent lazy loading.
+                </p>
+
+                <!-- Search -->
+
+                <form id="search-form" class="hero__search">
+
+                    <input
+                        id="search-input"
+                        class="input"
+                        type="text"
+                        placeholder="Search beautiful photos..."
+                        autocomplete="off">
+
+                    <button
+                        id="search-button"
+                        class="btn btn--primary"
+                        type="submit">
+
+                        Search
+
+                    </button>
+
+                </form>
+
+                <!-- Categories -->
+
+                <div class="hero__chips" id="category-chips">
+
+                    <button class="chip active" data-category="Nature">Nature</button>
+                    <button class="chip" data-category="Space">Space</button>
+                    <button class="chip" data-category="Cars">Cars</button>
+                    <button class="chip" data-category="Technology">Technology</button>
+                    <button class="chip" data-category="Animals">Animals</button>
+                    <button class="chip" data-category="Travel">Travel</button>
+
+                </div>
+
+                <!-- Stats -->
+
+                <div class="hero-stats">
+
+                    <div>
+                        <h3>10M+</h3>
+                        <span>Photos</span>
+                    </div>
+
+                    <div>
+                        <h3>100+</h3>
+                        <span>Categories</span>
+                    </div>
+
+                    <div>
+                        <h3>⚡</h3>
+                        <span>Optimized</span>
+                    </div>
+
+                </div>
+
+                <div class="scroll-indicator">
+                    ↓ Scroll to Explore
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="gallery section" id="gallery-section">
+
+            <div class="container">
+
+                <div class="gallery__header">
+
+                    <h2 class="section-title">
+                        Discover Beautiful Photos
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Curated images powered by the Pexels API.
+                    </p>
+
+                </div>
+
+                <div id="gallery" class="gallery__grid"></div>
+
+                <div id="scroll-trigger"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <section id="about" class="about section">
+
+    <div class="container">
+
+        <h2>About PixelVista</h2>
+
+        <p>
+
+            PixelVista is a modern photography discovery platform powered by the Pexels API. It showcases high-quality images with lazy loading, infinite scrolling, search, favorites, and a responsive interface.
 
         </p>
-
-        <div class="search-wrapper">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-            <input
-                type="text"
-                placeholder="Search mountains, wildlife, architecture..."
-            >
-
-            <button>
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </button>
-
-        </div>
-
-        <div class="hero-categories">
-
-            <button>🌿 Nature</button>
-            <button>🚗 Cars</button>
-            <button>🚀 Space</button>
-            <button>🤖 AI</button>
-            <button>🏖 Travel</button>
-            <button>🦁 Animals</button>
-
-        </div>
-
-        <div class="hero-stats">
-
-            <div>
-
-                <h3>10M+</h3>
-
-                <span>Photos</span>
-
-            </div>
-
-            <div>
-
-                <h3>100+</h3>
-
-                <span>Categories</span>
-
-            </div>
-
-            <div>
-
-                <h3>⚡</h3>
-
-                <span>Optimized</span>
-
-            </div>
-
-        </div>
-
-        <div class="scroll-indicator">
-
-            ↓ Scroll to Explore
-
-        </div>
 
     </div>
 
 </section>
-</main>
+
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
     </footer>
 
-<script type="module" src="js/app.js"></script>
+    <!-- ================= IMAGE MODAL ================= -->
 
-</body>
-  <script type="module" src="./js/app.js"></script>
-<!-- ======================================
-     Gallery Section
-====================================== -->
+    <div class="modal" id="image-modal">
 
-<section class="gallery section">
+        <div class="modal__backdrop"></div>
 
-    <div class="container">
+        <div class="modal__container">
 
-        <div class="gallery__header">
+            <button
+                id="modal-prev"
+                class="modal__nav modal__nav--left">
+                ❮
+            </button>
 
-            <h2 class="section-title">
-                Discover Beautiful Photos
-            </h2>
+            <button
+                id="modal-next"
+                class="modal__nav modal__nav--right">
+                ❯
+            </button>
 
-            <p class="section-subtitle">
-                Curated images powered by the Pexels API.
-            </p>
+            <button
+                class="modal__close"
+                id="modal-close"
+                aria-label="Close Modal">
+                ✕
+            </button>
 
-        </div>
+            <img
+                id="modal-image"
+                class="modal__image"
+                src=""
+                alt="">
 
-        <!-- Images will be inserted here -->
+            <div class="modal__content">
 
-        <div
-            id="gallery"
-            class="gallery__grid"
-        >
+                <h3
+                    id="modal-photographer"
+                    class="modal__photographer">
+                </h3>
+
+                <p
+                    id="modal-resolution"
+                    class="modal__resolution">
+                </p>
+
+                <div class="modal__actions">
+
+                    <a
+                        id="modal-download"
+                        class="button button--primary"
+                        download>
+                        Download
+                    </a>
+
+                    <a
+                        id="modal-pexels"
+                        class="button button--secondary"
+                        target="_blank">
+                        View on Pexels
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
-</section>
+    <!-- JavaScript -->
+    <script type="module" src="./js/app.js"></script>
 
 </body>
+
 </html>

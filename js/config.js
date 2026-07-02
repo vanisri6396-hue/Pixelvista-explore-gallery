@@ -3,15 +3,9 @@
     APPLICATION CONFIGURATION
 ======================================*/
 
-/**
- * Pexels API Configuration
- * Replace YOUR_API_KEY with your own key.
- */
-
 export const CONFIG = {
 
     API_KEY: "TtQ3MtMWPxxIorwH0O0u5SWf38uZxULLePZCjXnnTQjhPgWB5ZFaETNm",
-
 
     BASE_URL: "https://api.pexels.com/v1",
 
@@ -27,22 +21,42 @@ export const CONFIG = {
 
 };
 
-/**
- * Frequently used DOM selectors.
- */
+/*======================================
+    DOM SELECTORS
+======================================*/
 
 export const SELECTORS = {
 
     gallery: "#gallery",
 
-    searchInput: "#searchInput",
+    searchForm: "#search-form",
 
-    searchButton: "#searchButton",
+    searchInput: "#search-input",
 
-    loader: "#loader",
+    searchButton: "#search-button",
 
-    modal: "#imageModal",
+    chipsContainer: "#category-chips",
 
-    toastContainer: "#toastContainer"
+    chips: ".chip",
+
+    scrollTrigger: "#scroll-trigger"
 
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

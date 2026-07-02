@@ -14,9 +14,9 @@ class PexelsAPI {
 
     }
 
-    /**
-     * Common headers
-     */
+    /*======================================
+        REQUEST HEADERS
+    ======================================*/
 
     get headers() {
 
@@ -28,9 +28,9 @@ class PexelsAPI {
 
     }
 
-    /**
-     * Generic Request
-     */
+    /*======================================
+        GENERIC API REQUEST
+    ======================================*/
 
     async request(endpoint) {
 
@@ -42,6 +42,8 @@ class PexelsAPI {
 
                 {
 
+                    method: "GET",
+
                     headers: this.headers
 
                 }
@@ -52,7 +54,7 @@ class PexelsAPI {
 
                 throw new Error(
 
-                    `HTTP Error : ${response.status}`
+                    `HTTP ${response.status} - ${response.statusText}`
 
                 );
 
@@ -62,15 +64,9 @@ class PexelsAPI {
 
         }
 
-        catch(error){
+        catch (error) {
 
-            console.error(
-
-                "API Error:",
-
-                error.message
-
-            );
+            console.error("❌ API Error:", error);
 
             throw error;
 
@@ -78,11 +74,11 @@ class PexelsAPI {
 
     }
 
-    /**
-     * Curated Photos
-     */
+    /*======================================
+        CURATED PHOTOS
+    ======================================*/
 
-    async getCuratedPhotos(page = 1){
+    async getCuratedPhotos(page = 1) {
 
         return await this.request(
 
@@ -92,21 +88,29 @@ class PexelsAPI {
 
     }
 
-    /**
-     * Search Photos
-     */
+    /*======================================
+        SEARCH PHOTOS
+    ======================================*/
 
-    async searchPhotos(
-
-        query,
-
-        page = 1
-
-    ){
+    async searchPhotos(query, page = 1) {
 
         return await this.request(
 
             `/search?query=${encodeURIComponent(query)}&page=${page}&per_page=${CONFIG.PER_PAGE}`
+
+        );
+
+    }
+
+    /*======================================
+        GET SINGLE PHOTO
+    ======================================*/
+
+    async getPhotoById(id) {
+
+        return await this.request(
+
+            `/photos/${id}`
 
         );
 
